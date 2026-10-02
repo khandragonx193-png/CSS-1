@@ -1,0 +1,140 @@
+/* Reset cơ bản */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #16a085;
+    margin-bottom: 10px;
+}
+
+section {
+    background: #ffffff;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== 2. list-style-type: square ===== */
+.subjects {
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+/* ===== 3. list-style-type: upper-roman ===== */
+.steps {
+    list-style-type: upper-roman;
+    padding-left: 40px;
+}
+
+/* ===== 4. list-style-image ===== */
+.tools {
+    list-style-image: url('https://cdn-icons-png.flaticon.com/16/190/190411.png');
+    padding-left: 30px;
+}
+
+/* ===== 5. list-style-position ===== */
+.position-demo {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.position-demo > div {
+    flex: 1;
+    min-width: 280px;
+}
+
+.outside {
+    list-style-type: disc;
+    list-style-position: outside;
+    background-color: #eafaf1;
+    padding: 15px 15px 15px 40px;
+    border-radius: 8px;
+}
+
+.inside {
+    list-style-type: disc;
+    list-style-position: inside;
+    background-color: #fef9e7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* ===== 6. list-style shorthand ===== */
+.shorthand {
+    list-style: circle inside url('https://cdn-icons-png.flaticon.com/16/190/190411.png');
+    background-color: #e8f4fd;
+    padding: 15px 15px 15px 20px;
+    border-radius: 8px;
+}
+
+/* ===== 7. Màu sắc và khoảng cách ===== */
+.languages {
+    list-style-type: square;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 20px 20px 45px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.languages li {
+    margin-bottom: 12px;
+    padding: 6px 0;
+}
+
+.languages li:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== 8. Bài tập tổng hợp ===== */
+.roadmap {
+    list-style: upper-roman outside none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    padding: 25px 25px 25px 55px;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.roadmap li {
+    margin-bottom: 14px;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.roadmap li:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.roadmap li:last-child {
+    margin-bottom: 0;
+}
